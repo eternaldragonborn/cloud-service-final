@@ -10,9 +10,11 @@ import { useState } from "react";
 
 const images: { [label: string]: string } = {
   各年平均價格: "average_price-year",
-  主要用途占比: "main_purpose",
   每平方公尺平均價格: "price-pre_square_meter",
   各區價格比較: "total_price-district",
+  房間數量占比: "room_num_percentage",
+  房間數量和價格關係: "room_num-price",
+  主要用途占比: "main_purpose",
 };
 const getImage = (name: string) =>
   new URL(`./assets/${name}.png`, import.meta.url).href;
