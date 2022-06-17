@@ -25,7 +25,7 @@ export function Charts() {
     setExpanded(expanded ? id : false);
 
   return (
-    <Container>
+    <Container sx={{ mb: 5 }}>
       {Object.entries(images).map(([label, id]) => (
         <Accordion
           expanded={expanded === id}
